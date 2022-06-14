@@ -7,5 +7,10 @@ export const counterSlice = counterSlice({
     increment: (state, action) => {
       state.data += 1;
     },
+    decrement: (state, action) => {
+      state.data -= 1;
+    },
   },
 });
+
+export default counterSlice.reducer;
