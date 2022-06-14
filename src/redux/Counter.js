@@ -12,7 +12,7 @@ export const counterSlice = createSlice({
     },
   },
 });
-
+console.log(counterSlice);
 
 export const { increment, decrement } = counterSlice.actions;
 

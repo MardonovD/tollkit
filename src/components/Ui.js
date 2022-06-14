@@ -1,5 +1,6 @@
 import React from "react";
 import { useSelector, useDispatch } from "react-redux";
+import { increment, decrement } from "../redux/Counter";
 const Ui = () => {
   const dispatch = useDispatch();
   const counter = useSelector((store) => store.counter);
