@@ -1,6 +1,7 @@
 import React from "react";
-import { useSelector } from "react-redux";
+import { useSelector, useDispatch } from "react-redux";
 const Ui = () => {
+  const dispatch = useDispatch();
   const counter = useSelector((store) => store.counter);
   console.log(counter);
   return (
