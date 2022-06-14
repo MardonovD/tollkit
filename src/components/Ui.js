@@ -8,8 +8,12 @@ const Ui = () => {
   return (
     <div className="ui">
       <h1>Counter ichidagi malumot : {counter.data}</h1>
-      <button className="btn btn-danger">+</button>
-      <button className="btn btn-primary">-</button>
+      <button onClick={() => dispatch(increment())} className="btn btn-danger">
+        +
+      </button>
+      <button onClick={() => dispatch(decrement())} className="btn btn-primary">
+        -
+      </button>
     </div>
   );
 };
